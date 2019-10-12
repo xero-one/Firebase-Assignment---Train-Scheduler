@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Movie Times</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Link to materialize CSS CDN-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">   
+
+        
+
+        <!--Link to external css reset style sheet-->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+        <!--Link to my custom CSS style sheet-->
+        <link rel="stylesheet" type="text/css" href=assets/css/style.css>
+
+        <!--Link to custom Google font-->
+    </head>
+
+    <body>
+        <div class="row" id="">
+            <div class="col s12" id="">
+                <h1>Uber!</h1>
+                <p>Welcome to our time checker for ubers!</p>
+                </div>
+        </div>
+
+        <div class="row" id="">
+            <div class="col s12" id="">
+            <h2>Enter your uber to check the times!</h2>
+            <br>
+            <table class="table" id="movie-schedule">
+                <thead>
+                    <tr>
+                        <th scope="col">Uber Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency</th>
+                        <th scope="col">Uber Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <!--Input from firebase-->
+                <tbody id="append-row">
+                </tbody>
+            </table>
+            <h4 class="">Enter your uber</h4>
+            <!--User input form-->
+            <div class="col s12 input" id="">
+                <form>
+                    <div class="">
+                            <label for="form-input">Uber Name</label>
+                            <input type="text" class="form" id="name" placeholder="Example"> 
+                    </div>
+                    <div class="">
+                            <label for="">Destination</label>
+                            <input type="text" class="form" id="destination" placeholder="Example"> 
+                    </div>
+                    <div class="">
+                            <label for="">First Uber Time</label>
+                            <input type="text" class="form" id="first-uber" placeholder="Example"> 
+                    </div>
+                    <div class="">
+                            <label for="">Frequency (minutes)</label>
+                            <input type="text" class="form" id="frequency" placeholder="Example"> 
+                    </div>
+                </form>
+                <br><br>
+                <button type="submit" class="" id="add-uber">Submit</button>
+            </div>
+
+            </div>
+        </div>
+         <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+         <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+    </body>
+</html>
