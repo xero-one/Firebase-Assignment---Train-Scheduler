@@ -27,32 +27,42 @@
     </head>
 
     <body>
-        <div class="row" id="">
+        <div class="row" id="title-header-div">
             <div class="col s12" id="">
-                <h1>Uber!</h1>
-                <p>Welcome to our time checker for ubers!</p>
+                <br><br>
+                <h1 class="title-header">My Silly Uber Scheduler!</h1>
+                <p class="title-description">Welcome to our time checker for ubers!</p>
                 </div>
         </div>
 
         <div class="row" id="">
             <div class="col s12" id="">
-            <h2>Enter your uber to check the times!</h2>
-            <br>
+            
+            <br><br>
+            <div class="cols s12">
+            <h1 class="clock-display">Current Time: <span id = "current-time" class = "clock-display"></span></h1>
+            <hr>
+            <h2 class="center">Enter your uber to check the times!</h2>
+            <br><br>
+        </div>
             <table class="table" id="movie-schedule">
                 <thead>
                     <tr>
-                        <th scope="col">Uber Name</th>
-                        <th scope="col">Destination</th>
-                        <th scope="col">Frequency</th>
-                        <th scope="col">Uber Arrival</th>
-                        <th scope="col">Minutes Away</th>
+                        <th class="table-header" scope="col">Uber Name</th>
+                        <th class="table-header" scope="col">Destination</th>
+                        <th class="table-header" scope="col">Frequency</th>
+                        <th class="table-header" scope="col">Uber Arrival</th>
+                        <th class="table-header" scope="col">Minutes Away</th>
                     </tr>
                 </thead>
                 <!--Input from firebase-->
                 <tbody id="append-row">
                 </tbody>
             </table>
-            <h4 class="">Enter your uber</h4>
+            <br><br>
+            <hr>
+            <h4 class="center">Enter your uber</h4>
+            <br>
             <!--User input form-->
             <div class="col s12 input" id="">
                 <form>
